@@ -4,13 +4,44 @@
     "name": "Perfume",
     "desc": "Miguel Rousseouf",
     "value": "100.00",
-    "image": "https://img.irroba.com.br/fit-in/600x600/filters:fill(fff):quality(80)/volarium/catalog/produtos/volarium/perfume/perfume-feminino/perfume-feminino-ch-tradicional-importado-original.jpg"
+    "image": "https://img.irroba.com.br/fit-in/600x600/filters:fill(fff):quality(80)/volarium/catalog/produtos/volarium/perfume/perfume-feminino/perfume-feminino-ch-tradicional-importado-original.jpg",
+    "category": "Cuidado Pessoal",
+    "status" : "true"
   },
   {
     "id": 2,
     "name": "Colar",
     "desc": "Jand Karno em perolas",
     "value": "2200.00",
-    "image": "https://cdn.awsli.com.br/600x450/1537/1537341/produto/152389745/01e29e7fcc.jpg"
+    "image": "https://cdn.awsli.com.br/600x450/1537/1537341/produto/152389745/01e29e7fcc.jpg",
+    "category": "Joias",
+    "status" : "false"
+  },
+  {
+    "id": 3,
+    "name": "Porsche 911",
+    "desc": "Vrum Vrum",
+    "value": "950,000.00",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjvDnFru_dJ593mEVaD9opeen6N90CMBFSHIIZ-5Tmmw&s",
+    "category": "Veículo",
+    "status" : "true"
+  },
+  {
+    "id": 4,
+    "name": "Bob Esponja",
+    "desc": "Ele é literalmente uma esponja chamada bob",
+    "value": "69.99",
+    "image": "https://medlimp.com.br/wp-content/uploads/2018/10/Esponja-dupla-face-multiuso-Bettanin.jpg",
+    "category": "Utilidades",
+    "status" : "false"
+  },
+  {
+    "id": 5,
+    "name": "Escavadeira de bolso",
+    "desc": "Escavadeira pequenininha que cabe no seu bolso",
+    "value": "100,000,000.00",
+    "image": "https://149900815.v2.pressablecdn.com/wp-content/uploads/2018/10/bagger-maior-escavadeira-do-mundo-201218-c.jpg",
+    "category": "Veículo",
+    "status" : "true"
   }
 ]

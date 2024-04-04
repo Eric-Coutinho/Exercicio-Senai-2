@@ -5,6 +5,13 @@
   align-items: center;
   justify-content: center;
   gap: 1vw;
+  position: fixed;
+  top: 0;
+  background-color: #242424;
+}
+
+.title {
+  padding-inline: 0.5em;
 }
 
 .wrapPage {
@@ -14,7 +21,12 @@
   flex-direction: column;
   align-items: left;
   justify-content: center;
-  gap: 1vh;
-  padding: 10px;
   background-color: rgb(47, 47, 47);
+  margin-top: 3em;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }

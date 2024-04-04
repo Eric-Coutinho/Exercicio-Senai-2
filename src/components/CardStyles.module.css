@@ -1,0 +1,25 @@
+.card {
+    background-color: rgb(85, 85, 85);
+    display: flex;
+    flex-direction: column;
+    width: 20em;
+    padding: 2em;
+    padding-top: 1em;
+    border-radius: 15px;
+    margin: 1em;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+}
+
+.img {
+    object-fit: contain;
+}
+
+.cardOverlay {
+    margin-right: 2em;
+}
+
