@@ -9,17 +9,18 @@
     margin: 1em;
 }
 
+.titleCard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .image {
     display: flex;
     justify-content: center;
-    flex-direction: column-reverse;
 }
 
 .img {
     object-fit: contain;
-}
-
-.cardOverlay {
-    margin-right: 2em;
 }
 
