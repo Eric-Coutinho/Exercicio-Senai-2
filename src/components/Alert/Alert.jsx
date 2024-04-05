@@ -1,16 +1,26 @@
-import { Alert } from "bootstrap"
+import { useState } from 'react';
+import Alert from 'react-bootstrap/Alert';
+import Button from 'react-bootstrap/Button';
 
 export const AlertComponent = (show) => {
-    console.log("chamou?")
-    return (
-        <Alert>
-            {/* <div className="alert alert-warning d-flex align-items-center" role="alert">
-                <svg className="bi flex-shrink-0 me-2" role="img" aria-label="Warning:"><use xlink:href="#exclamation-triangle-fill" /></svg>
-                <div>
-                    An example warning alert with an icon
-                </div>
-            </div> */}
-            <h1>AAAAAAAAAAAAAAAA</h1>
-        </Alert>
-    )
+    const [showAlert, setShowAlert] = useState(false);
+
+  return (
+    <>
+      <Alert show={show} variant="warning">
+        <Alert.Heading>Erro</Alert.Heading>
+        <p>
+          Não foi possível achar personagens nessa página.
+        </p>
+        <hr />
+        <div className="d-flex justify-content-end">
+          <Button onClick={() => setShow(false)} variant="outline-success">
+            Fechar
+          </Button>
+        </div>
+      </Alert>
+
+      {!show && <Button onClick={() => setShow(true)}>Show Alert</Button>}
+    </>
+  );
 }
