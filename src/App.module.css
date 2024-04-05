@@ -11,7 +11,7 @@
 }
 
 .title {
-  padding-inline: 0.5em;
+  padding-inline: 1em;
 }
 
 .wrapPage {
@@ -29,4 +29,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.mapContainer {
+  overflow: hidden;
+  padding-inline: 1em;
+  margin-top: 2em;
 }

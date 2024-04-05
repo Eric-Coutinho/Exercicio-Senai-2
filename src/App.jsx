@@ -5,6 +5,7 @@ import { api } from "./api/rmApi"
 import style from './App.module.css'
 import { CardRaM } from './components/CardRaM/CardRaM'
 import { AlertComponent } from './components/Alert/Alert'
+import { Mapa } from './components/Mapa/mapa'
 
 function App() {
   const [show, setShow] = useState("")
@@ -40,7 +41,9 @@ function App() {
         <h1 className={style.title}>Exercícios de manutenção</h1>
         {show === "prod" &&
           <>
-            <h2 className={style.title}>Showroom de produtos</h2>
+            <div className={style.title}>
+              <h2>Showroom de produtos</h2>
+            </div>
             <div className={style.cardContainer}>
               {produtos.map((item) => {
                 return (
@@ -52,10 +55,12 @@ function App() {
         }
         {show === "api" &&
           <>
-            <h2>Rick and Morty API</h2>
-            <div>
-              <input type="text" placeholder={`1/42`} value={page} onChange={(event) => setPage(event.target.value)} style={{ marginRight: '1em' }} />
-              <input type="text" placeholder="Nome..." value={name} onChange={(event) => setName(event.target.value)} />
+            <div className={style.title}>
+              <h2>Rick and Morty API</h2>
+              <div>
+                <input type="text" placeholder={`1/42`} value={page} onChange={(event) => setPage(event.target.value)} style={{ marginRight: '1em' }} />
+                <input type="text" placeholder={"Nome..."} value={name} onChange={(event) => setName(event.target.value)} />
+              </div>
             </div>
             <div className={style.cardContainer}>
               {data.map((item) => {
@@ -71,9 +76,11 @@ function App() {
         }
         {show === "map" &&
           <>
-            <h2>Mapa</h2>
-            <div>
-              mapa aqui
+            <div className={style.title}>
+              <h2>Mapa</h2>
+            </div>
+            <div className={style.mapContainer}>
+              <Mapa />
             </div>
           </>
         }
